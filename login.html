@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>website Project</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
+    <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+    <link rel="stylesheet" href="styles/pages/login.css">
+  </head>
+  <body>
+    <div class="checkout-header">
+      <div class="header-content">
+        <div class="checkout-header-left-section">
+          <a href="website.html">
+            <img class="website-logo" src="images/website-logo.png">
+          </a>
+        </div>
+
+        <div class="checkout-header-middle-section">
+          Login Page
+        </div>
+
+        <div class="checkout-header-right-section">
+          <img src="images/icons/checkout-lock-icon.png">
+        </div>
+      </div>
+    </div>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+  <h2>Login</h2>
+  <input id="loginEmail" placeholder="Email"><br><br>
+  <input id="loginPassword" type="password" placeholder="Password"><br><br>
+  <button onclick="login()">Login</button>
+  <br><br>
+  <a href="#" onclick="showSignup()">New user? Create account</a>
+</div>
+
+<!-- SIGNUP PAGE -->
+<div id="signupPage" style="display:none;">
+  <h2>Create Account</h2>
+  <input id="signupEmail" placeholder="Email"><br><br>
+  <input id="name" placeholder="Name"><br><br>
+  <input id="signupPassword" type="password" placeholder="Password"><br><br>
+  <input id="signupConfirmPassword" type="password" placeholder="Confirm Password"><br><br>
+  <button onclick="signup()">Sign Up</button>
+  <br><br>
+  <a href="#" onclick="showLogin()">Already have an account? Login</a>
+</div>
+
+<!-- LOGGED IN PAGE -->
+<div id="welcomePage" style="display:none;">
+  <h1>Welcome, <span id="userEmail"></span></h1>
+<ul>
+  <li><a href="website.html">Home</a></li>
+  <li><a href="checkout.html">Checkout</a></li>
+  <li><a href="orders.html">Orders</a></li>
+</ul>
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="scripts/login.js"></script>
+</body>
+</html>

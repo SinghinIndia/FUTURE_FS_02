@@ -1,0 +1,1 @@
+const categories = ["All","Clothing","Kitchen","Home","Footwear","Sports","Cleaning",new Set(products.map(p => p.category))];

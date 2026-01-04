@@ -1,0 +1,174 @@
+
+/* Center the login/signup container */
+#loginPage, #signupPage, #welcomePage {
+  max-width: 400px;
+  margin: 100px auto 50px auto; /* below navbar and centered */
+  padding: 30px 20px;
+  background-color: #F7F9FC; /* light gray background */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+#loginPage h2, #signupPage h2, #welcomePage h2 {
+  margin-bottom: 25px;
+  color: #212121;
+}
+
+input {
+  width: 90%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(224,224,224,0.5);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: 2px solid rgb(19, 175, 187); /* blue focus */
+}
+
+button {
+  width: 95%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button style */
+#loginPage button, #signupPage button, #welcomePage button {
+  color: #FFFFFF;
+  background-color: rgb(19, 175, 187); /* blue CTA */
+  border: 1px solid rgb(19, 175, 187);
+}
+
+#loginPage button:hover, #signupPage button:hover, #welcomePage button:hover {
+  background-color: #0ef; /* dark blue hover */
+  border-color: #0ef;
+}
+
+#loginPage button:active, #signupPage button:active, #welcomePage button:active {
+  background-color: rgb(19, 175, 187);
+  border-color: rgb(19, 175, 187);
+  box-shadow: none;
+}
+
+/* Links under forms */
+#loginPage a, #signupPage a {
+  display: block;
+  margin-top: 15px;
+  color: rgb(19, 175, 187);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+#loginPage a:hover, #signupPage a:hover {
+  color: #0ef; /* dark blue hover */
+}
+
+/* Welcome page links */
+/* Welcome page container */
+#welcomePage {
+  max-width: 400px;
+  margin: 100px auto 50px auto;
+  padding: 30px 20px;
+  background-color: #F7F9FC;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Welcome heading */
+#welcomePage h1 {
+  margin-bottom: 20px;
+  color: #212121;
+  font-size: 24px;
+  text-align: center; /* keep welcome text centered */
+}
+
+/* Links list */
+#welcomePage ul {
+  list-style-type: none; /* remove bullets */
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left; /* align left */
+}
+
+#welcomePage ul li {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+#welcomePage ul li a {
+  color: rgb(19, 175, 187); /* blue links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#welcomePage ul li a:hover {
+  color: #0ef; /* dark blue hover */
+}
+
+/* Logout button */
+#welcomePage button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: rgb(19, 175, 187);
+  transition: all 0.3s ease;
+}
+
+#welcomePage button:hover {
+  background-color: #0ef;
+}
+
+#welcomePage button:active {
+  background-color: rgb(19, 175, 187);
+  box-shadow: none;
+}
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 480px) {
+  #loginPage, #signupPage, #welcomePage {
+    width: 90%;
+    margin: 80px auto 30px auto;
+    padding: 20px 15px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
+
+
+.login-header-middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFFFFF; /* white text for dark background */
+  text-align: center;
+}
+
+/* Optional: responsive font size for mobile */
+@media (max-width: 575px) {
+  .login-header-middle-section {
+    font-size: 16px;
+  }
+}
+

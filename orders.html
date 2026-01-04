@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/website-header.css">
+    <link rel="stylesheet" href="styles/pages/orders.css">
+  </head>
+  <body>
+    <div class="website-header">
+      <div class="website-header-left-section">
+        <a href="website.html" class="header-link" id="logo-link">
+          <img class="website-logo"
+            src="images/website-logo.png">
+         
+        </a>
+      </div>
+
+      <div class="website-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="website-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="orders-text">Orders</span>
+        </a>
+
+        <!-- Login / User Link -->
+        <a id="loginHeaderLink" class="header-link" href="login.html">
+          <span class="loginText">Login</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text">Cart</div>
+        </a>
+    </div>
+    </div>
+
+    <div class="main js-main">
+      <div class="page-title">Your Orders</div>
+
+      <div class="orders-grid
+      js-order-grid">
+
+      </div>
+    </div>
+    <script type="module" src="scripts/orderPage.js"></script>
+  </body>
+</html>
